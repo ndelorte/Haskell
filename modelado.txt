@@ -1,0 +1,57 @@
+sustancia elemento | compuesto
+
+
+elemento
+    nombre
+    simbolo quimico
+    numero atomico
+    grupo
+
+compuesto
+    elemento
+    compuesto
+    cantidad moleculas
+    nombre
+
+--- 1 ---
+
+hidrogeno (elemento)
+oxigeno (elemento)
+
+agua (compuesto)
+
+--- 2 ---
+
+criterio 
+    electricidad
+        metales
+        elementos gases nobles
+    calor
+        metales
+        compuestos halogenos
+
+conduceBien (criterio, sustancia)
+
+--- 3 ---
+
+nombreDeUnion (nombre)
++"uro" si termina en consonante
+-vocal +"uro" si termina en vocal
+
+--- 4 ---
+
+combinar (nombre, nombre)
+nombreDeUnion + "de" + nombre
+
+--- 5 ---
+
+mezclar (elemento, elemento) --> compuesto
+nombre = combinar
+especie = no metales
+
+--- 6 ---
+
+obtenerFormula
+    si  
+        elemento = formula quimica
+        compuesto = concatenacion de las representaciones de sus componenentes (si tiene mas de una molecula se muestra la cantidad)
